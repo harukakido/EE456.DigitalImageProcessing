@@ -1,0 +1,11 @@
+clear;
+A = imread('pout.tif');
+subplot(3,2,1);
+imshow(A);
+subplot(3,2,2);
+imhist(A);
+B = histeq(A, 256);
+subplot(3,2,3);
+imshow(B);
+subplot(3,2,4);
+imhist(B);
